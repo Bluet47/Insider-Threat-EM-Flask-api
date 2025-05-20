@@ -1,20 +1,20 @@
 # Use Python 3.13 base image
 FROM python:3.13.2-bookworm
 
-# Set working directory
-WORKDIR /back-end
+# Create and switch to an app directory
+WORKDIR /app
 
-# Copy requirements.txt to the container
+# Copy requirements first
 COPY requirements.txt .
 
-# Install the required Python packages
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your application code to the container
+# Copy the rest of your code
 COPY . .
 
-# Expose the port the app runs on
+# Expose the port the Flask app uses
 EXPOSE 8080
 
-# Command to run the Flask app
-CMD ["python", "./app.py"]
+# Run the app
+CMD ["python", "app.py"]
