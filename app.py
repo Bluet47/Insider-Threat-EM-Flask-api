@@ -81,8 +81,5 @@ def update_departure_date(last_name):
     db_instance.update_departure_date(last_name, new_date)
     return jsonify({"status": "Departure date updated!"})
 
-# Only run this when starting locally (not in production container)
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))  # fallback to 5000
-    app.run(host='0.0.0.0', port=port)
-
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
