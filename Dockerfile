@@ -2,15 +2,19 @@
 FROM python:3.13.2-bookworm
 
 # Set working directory
-ENV APP_HOME /back-end
-WORKDIR $APP_HOME
+WORKDIR /back-end
 
-# Copy everything into the container
-COPY . ./
+# Copy requirements.txt to the container
+COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir --upgrade pip
+# Install the required Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Run app with Gunicorn
-CMD gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
+# Copy the rest of your application code to the container
+COPY . .
+
+# Expose the port the app runs on
+EXPOSE 8080
+
+# Command to run the Flask app
+CMD ["python", "./app.py"]
