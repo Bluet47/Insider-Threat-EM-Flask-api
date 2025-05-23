@@ -4,6 +4,8 @@ from dotenv import load_dotenv # type: ignore
 import os
 from flask_cors import CORS # type: ignore
 
+load_dotenv()
+
 COLLECTION_NAME = "employees"
 
 # Initialize Flask app
