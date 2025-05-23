@@ -3,7 +3,7 @@ name: Deploy to Cloud Run
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   deploy:
@@ -14,16 +14,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Google Cloud SDK
+    - name: Authenticate to Google Cloud
+      uses: google-github-actions/auth@v1
+      with:
+        credentials_json: '${{ secrets.GCP_SA_KEY }}'
+
+    - name: Set up Cloud SDK
       uses: google-github-actions/setup-gcloud@v1
       with:
         project_id: flask-api-459518
-        service_account_key: ${{ secrets.GCP_SA_KEY }}
-        export_default_credentials: true
 
-    - name: Build and push Docker image
+    - name: Configure Docker for GCR
+      run: gcloud auth configure-docker
+
+    - name: Build and Push Docker Image
       run: |
-        gcloud auth configure-docker
         docker build -t gcr.io/flask-api-459518/em-flask-api:latest .
         docker push gcr.io/flask-api-459518/em-flask-api:latest
 
@@ -35,4 +40,3 @@ jobs:
           --platform managed \
           --allow-unauthenticated \
           --set-env-vars FLASK_DEBUG=1
-
