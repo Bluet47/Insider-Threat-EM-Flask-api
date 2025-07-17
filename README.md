@@ -93,10 +93,7 @@ API functionality was manually tested using **Postman**, covering:
 - Input validation
 - CRUD operations
 - Edge cases (e.g., duplicate entries, missing fields)
-
-Future iterations could include:
 - Unit tests using `pytest`
-- Contract testing
 - Integration tests as part of CI
 
 ---
@@ -110,7 +107,7 @@ Future iterations could include:
 | **CI/CD**       | GitHub Actions pipeline for build, test, deploy                                |
 | **IaC**         | Terraform-managed GCP provisioning                                             |
 | **Containerization** | Dockerfile and image-based deployment                                     |
-| **Testing**     | Manual API tests with HTTP methods + potential for expansion                   |
+| **Testing**     | Automated and Manual testing of the API                  |
 | **DevOps Culture** | Shift-left, automation, shared responsibility, repeatable deployments       |
 
 ---
