@@ -1,7 +1,7 @@
 # EM-Flask-api
 Employee mangment system flask api app 
 
-# Insider Threat Detection API – Agile DevSecOps Project
+# Insider Threat Detection API – Agile DevOps Project
 
 This project showcases practical experience with Agile software development, API design, infrastructure as code (IaC), containerization, CI/CD pipelines, and testing within a modern DevSecOps workflow.
 
@@ -111,6 +111,24 @@ API functionality was manually tested using **Postman**, covering:
 | **DevOps Culture** | Shift-left, automation, shared responsibility, repeatable deployments       |
 
 ---
+
+## Future Development – Django Web Application
+
+A natural progression for this project would be the development of a web interface using Django to make the system accessible to non-technical users such as HR teams, security personnel, and management. This would transform the Flask API into a full-stack web application capable of supporting internal dashboards, user roles, and workflow automation.
+
+### Why Django?
+
+Django offers a powerful and secure web framework that integrates frontend and backend capabilities. It also comes with a built-in admin panel, robust authentication system, and scalability for future feature expansion. The framework's flexibility allows two implementation paths:
+
+1. Building a classic web application using Django Templates and Views
+2. Using Django REST Framework (DRF) to consume the existing Flask API (or to eventually replace it for unified backend management)
+
+### Key Benefits
+
+- Secure, production-ready web framework
+- Built-in user authentication and session management
+- Django Admin for internal data management
+- Scalable architecture for future modules (e.g., notifications, role-based access)
 
 ## Screenshots (Available in Report)
 
