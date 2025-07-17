@@ -93,8 +93,8 @@ API functionality was manually tested using **Postman**, covering:
 - Input validation
 - CRUD operations
 - Edge cases (e.g., duplicate entries, missing fields)
-- Unit tests using `pytest`
-- Integration tests as part of CI
+- Unit tests using `pytest` part of CI/CD
+- Integration tests as part of CI/CD
 
 ---
 
