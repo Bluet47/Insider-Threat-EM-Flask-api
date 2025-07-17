@@ -3,7 +3,7 @@ Employee mangment system flask api app
 
 # Insider Threat Detection API – Agile DevOps Project
 
-This project showcases practical experience with Agile software development, API design, infrastructure as code (IaC), containerization, CI/CD pipelines, and testing within a modern DevSecOps workflow.
+This project showcases practical experience with Agile software development, API design, infrastructure as code (IaC), containerization, CI/CD pipelines, and testing within a modern DevOps workflow.
 
 ---
 
