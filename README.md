@@ -9,7 +9,7 @@ This project showcases practical experience with Agile software development, API
 
 ## Project Scenario – Hypothetical Use Case
 
-**Company:** CyberAware Corp  
+**Company:** XYZ 
 **Team:** Cyber Threat Intelligence (CTI)  
 **Problem:** Insider threats from departing employees have risen dramatically, backed by case studies and industry reports (e.g., CrowdStrike, 2025; Mimecast, 2025). The CTI team requires a lightweight, scalable tool to track and assess leavers who may pose a security risk.
 
