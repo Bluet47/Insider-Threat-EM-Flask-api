@@ -39,7 +39,7 @@ Due to the project's short timeline and solo development, I implemented an Agile
 - Features and user stories were visually tracked and prioritized.
 - Daily feedback from a fictional customer (CTI lead) simulated iterative delivery and fast feedback cycles.
 
-  ![Kanbanboard](./support_doc/Sub_tickets.jfif)
+  ![Kanbanboard](./support_doc/Screenshot 2025-07-24 at 22.20.03.png)
 
 ---
 
